@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<meta name="theme-color" content="#3157C8">
+<meta name="theme-color" content="#111315">
 <meta name="description" content="Wallspace — framed football, automotive and street-culture prints for your room and gaming setup. Choose a print, size and frame, then enquire on WhatsApp.">
 <title>Wallspace — Your Wall. Your Rules.</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -31,7 +31,7 @@ header{position:sticky;top:0;z-index:30;display:flex;justify-content:space-betwe
 .nav-cta{border:1px solid var(--ink);padding:10px 17px;border-radius:2px;transition:.2s}.nav-cta:hover{background:var(--ink);color:var(--bg)}
 .menu-btn{display:none;border:1px solid var(--line);background:transparent;padding:8px 11px;color:var(--ink)}
 .hero{min-height:min(760px,calc(100svh - 106px));position:relative;display:flex;align-items:flex-end;overflow:hidden;background:#c9c0b1}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1755436613032-10fd47e60014?auto=format&fit=crop&w=2200&q=88');background-size:cover;background-position:68% center;transform:scale(1.01)}
+.hero-bg{position:absolute;inset:0;background-image:url('https://i.pinimg.com/736x/29/4e/40/294e40420f7cae162209aab191af2737.jpg');background-size:cover;background-position:68% center;transform:scale(1.01)}
 .hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(21,22,19,.8) 0%,rgba(21,22,19,.48) 39%,rgba(21,22,19,.06) 100%),linear-gradient(0deg,rgba(21,22,19,.24),transparent 60%)}
 .hero-inner{position:relative;z-index:1;color:#fffdf8;padding:clamp(42px,8vw,112px) var(--pad);width:100%;max-width:930px;animation:rise .8s ease both}
 .eyebrow{font-size:10px;letter-spacing:.25em;text-transform:uppercase;display:flex;align-items:center;gap:12px;margin-bottom:24px;color:var(--accent);font-weight:700}
@@ -161,6 +161,75 @@ footer{padding:46px var(--pad) calc(38px + env(safe-area-inset-bottom,0px));bord
   .pdp .btn[data-wa]{bottom:8px;margin-top:22px}
 }
 
+
+/* WALLSPACE official visual identity — built around the supplied reference images */
+:root{
+  --bg:#111315;
+  --paper:#1a1d20;
+  --ink:#f2f0e9;
+  --muted:#a7aaac;
+  --line:#34383d;
+  --accent:#c7f464;
+}
+html{background:var(--bg)}
+body{background:var(--bg);color:var(--ink)}
+.topline{background:#090a0b;color:var(--accent)}
+header{background:rgba(17,19,21,.92);border-bottom-color:rgba(242,240,233,.12)}
+.logo-mark{background:var(--accent);color:#111315;border-color:var(--accent)}
+.nav a:not(.nav-cta){color:#c1c4c5}
+.nav a:not(.nav-cta):hover{color:var(--accent)}
+.nav-cta{border-color:var(--accent);color:var(--ink)}
+.nav-cta:hover{background:var(--accent);border-color:var(--accent);color:#111315}
+.menu-btn{border-color:var(--line);color:var(--ink)}
+.hero{background:#111315}
+.hero-bg{background-position:center center}
+.hero::after{background:linear-gradient(90deg,rgba(7,8,10,.88) 0%,rgba(7,8,10,.55) 43%,rgba(7,8,10,.12) 100%),linear-gradient(0deg,rgba(7,8,10,.36),transparent 62%)}
+.hero-inner{color:#f7f6f0}
+.hero .eyebrow,.eyebrow,.kicker,.pdp .kicker{color:var(--accent)}
+.hero h1 em{color:var(--accent)}
+.hero .btn,.btn{background:var(--accent);color:#111315;border-color:var(--accent)}
+.hero .btn:hover,.btn:hover{background:transparent;color:var(--accent);border-color:var(--accent)}
+.text-link{border-bottom-color:rgba(242,240,233,.55)}
+.section-head .side-note{color:var(--muted)}
+.tab{color:#c1c4c5;border-color:var(--line)}
+.tab:hover{border-color:var(--accent);color:var(--accent)}
+.tab[aria-pressed="true"]{background:var(--accent);color:#111315;border-color:var(--accent)}
+.chip{color:#c1c4c5;border-color:var(--line)}
+.chip:hover{border-color:var(--accent);color:var(--accent)}
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#111315}
+.setup-story{background:#171a1d;color:var(--ink)}
+.setup-subcopy{color:#b3b6b7}
+.setup-card{background:#202326;color:#fff}
+.setup-card-copy small,.vibe-pick-copy small{color:var(--accent)}
+.setup-arrow{background:rgba(12,14,15,.18)}
+.setup-card:hover .setup-arrow{background:var(--accent);color:#111315;border-color:var(--accent)}
+.vibe-strip{background:var(--accent);color:#111315;border-bottom-color:#111315}
+.vibe-track{color:#111315}
+.vibe-explorer-head p{color:var(--muted)}
+.vibe-pick{background:#202326;color:#f2f0e9}
+.vibe-pick[aria-pressed="true"]{outline-color:var(--accent)}
+.vibe-pick[aria-pressed="true"] .vibe-pick-mark{background:var(--accent);border-color:var(--accent);color:#111315}
+.editorial{background:#171a1d;color:#f2f0e9}
+.editorial-copy{color:#b8bbbc}
+.editorial-item{border-top-color:#3a3e42}
+.editorial-item p{color:#b3b6b7}
+.order-note{color:var(--muted)}
+.back{color:var(--muted)}
+.back:hover{color:var(--accent)}
+.pdp .desc{color:#c1c4c5}
+.pdp .btn[data-wa]{box-shadow:0 8px 25px rgba(0,0,0,.38)}
+footer{border-top-color:var(--line);color:var(--muted)}
+.footer-logo{color:var(--ink)}
+.footer-note{color:#85898c}
+.footer-note a{color:var(--ink);text-decoration-color:#5f6467}
+.footer-note a:hover{color:var(--accent)}
+:focus-visible{outline-color:var(--accent)}
+::selection{background:var(--accent);color:#111315}
+@media(max-width:650px){
+  .hero-bg{background-position:61% center}
+  .hero::after{background:linear-gradient(90deg,rgba(7,8,10,.84),rgba(7,8,10,.29)),linear-gradient(0deg,rgba(7,8,10,.44),transparent 63%)}
+}
+
 </style>
 </head>
 <body>
@@ -199,12 +268,12 @@ footer{padding:46px var(--pad) calc(38px + env(safe-area-inset-bottom,0px));bord
     </div>
     <div class="setup-gallery">
       <a class="setup-card" href="#shop" aria-label="Explore prints for a gaming corner">
-        <img src="https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=1500&q=88" alt="A gaming workspace with ambient lighting and art on the wall" loading="lazy">
+        <img src="https://i.pinimg.com/736x/d3/56/23/d35623b3ef9bd0f17896254667b657b8.jpg" alt="Wallspace visual reference for a bold, personal room setup" loading="lazy" referrerpolicy="no-referrer">
         <span class="setup-card-copy"><small>01 / GAMING CORNER</small><strong>The night shift.</strong><em>Make the whole setup feel like yours.</em></span>
         <span class="setup-arrow" aria-hidden="true">↗</span>
       </a>
       <a class="setup-card" href="#shop" aria-label="Explore prints for a clean desk setup">
-        <img src="https://images.unsplash.com/photo-1755436613032-10fd47e60014?auto=format&fit=crop&w=1500&q=88" alt="A clean modern desk and console setup" loading="lazy">
+        <img src="https://i.pinimg.com/736x/64/04/68/6404686e37fb5adb84ca025bb7fbdcfa.jpg" alt="Wallspace visual reference for the street-inspired room aesthetic" loading="lazy" referrerpolicy="no-referrer">
         <span class="setup-card-copy"><small>02 / EVERYDAY SETUP</small><strong>Built around you.</strong><em>Small details. A whole different mood.</em></span>
         <span class="setup-arrow" aria-hidden="true">↗</span>
       </a>
@@ -272,7 +341,7 @@ const PRODUCTS = [
 const VIBES = [
   { label:"Matchday mode", eyebrow:"FOOTBALL CULTURE", cat:"Football", img:"https://i.etsystatic.com/60830152/r/il/a3b05b/7643923566/il_1080xN.7643923566_lu7l.jpg" },
   { label:"Garage mode", eyebrow:"BUILT FOR SPEED", cat:"Cars", img:"https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1000&q=86" },
-  { label:"Desk setup", eyebrow:"STREET / SETUP CULTURE", cat:"Street Culture", img:"https://images.unsplash.com/photo-1616588589676-62b3bd4ff6d2?auto=format&fit=crop&w=1000&q=86" }
+  { label:"Desk setup", eyebrow:"STREET / SETUP CULTURE", cat:"Street Culture", img:"https://i.pinimg.com/736x/64/04/68/6404686e37fb5adb84ca025bb7fbdcfa.jpg" }
 ];
 /* ==================================== */
 PRODUCTS.forEach(p => p.slug = p.n.toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,""));
